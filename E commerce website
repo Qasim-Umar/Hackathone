@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Online E-commerce</title>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <p>Free shipping on orders over $50!</p>
+            <div class="auth-links">
+                <a href="#">Log In</a>
+                <a href="#">Register</a>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="logo">
+                    <img src="https://e7.pngegg.com/pngimages/137/14/png-clipart-mango-logo-clothing-basel-brand-others-angle-text.png" alt="Bookstore Logo">
+                </div>
+                <ul class="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#books">Books</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Welcome to Our Online Store</h1>
+        <p>Your are the one who needs the best product.</p>
+        <button><a href="#books">Shop Now</a></button>
+    </section>
+
+    <section id="books" class="book-collection">
+        <h2>Featured Books</h2>
+        <div class="book-list">
+            <div class="book-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3zNmNSpi0p8B8afXLc3hZ-DCe_STgV817_A&s" alt="Book Cover">
+                <h3>Leather Boots</h3>
+                <p>$10.99</p>
+                <button><a href="#">Buy Now</a></button>
+            </div>
+            <div class="book-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN0v3dgiaCcufr5zvr2inHl4k5RacqKoBZ2w&s" alt="Book Cover">
+                <h3>Black Jackte</h3>
+                <p>$8.99</p>
+                <button><a href="#">Buy Now</a></button>
+            </div>
+            <div class="book-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE8pVoYG6KEzACIbbspppXsXPaUVLGxwSd6g&s" alt="Book Cover">
+                <h3>Rounded sunglasses</h3>
+                <p>$12.99</p>
+                <button><a href="#">Buy Now</a></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-us">
+        <h2>About Us</h2>
+        <p>We are passionate about books and aim to provide a wide selection of Clothes. Our mission is to make people look good and make them good looking to everyone.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form action="https://formspree.io/f/xzbowpjq" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send US</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Online Bookstore. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

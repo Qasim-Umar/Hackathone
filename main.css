@@ -1,2 +1,121 @@
-/* Main stylesheet */
-body { font-family: Arial, sans-serif; }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .hero {
+            background: url('hero-image.jpg') center/cover;
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+            background: white;
+            margin: 20px;
+            border-radius: 8px;
+        }
+        .grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .box {
+            background: #ddd;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+        input, textarea, button {
+            padding: 10px;
+            width: 80%;
+            max-width: 400px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="hero">
+        <h1>Welcome to Our Big Website</h1>
+        <p>Your success starts here!</p>
+    </section>
+    
+    <section id="about" class="content">
+        <h2>About Us</h2>
+        <p>We are a company dedicated to providing the best services.</p>
+    </section>
+    
+    <section id="services" class="content">
+        <h2>Our Services</h2>
+        <div class="grid">
+            <div class="box">Service 1</div>
+            <div class="box">Service 2</div>
+            <div class="box">Service 3</div>
+        </div>
+    </section>
+    
+    <section id="contact" class="content">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Big Website. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

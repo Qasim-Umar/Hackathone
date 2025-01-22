@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Online E-commerce</title>
+    <title>Online Bookstore</title>
 </head>
+
 <body>
     <header>
         <div class="top-bar">
@@ -18,13 +20,16 @@
         <nav class="navbar">
             <div class="navbar-container">
                 <div class="logo">
-                    <img src="https://e7.pngegg.com/pngimages/137/14/png-clipart-mango-logo-clothing-basel-brand-others-angle-text.png" alt="Bookstore Logo">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHXpjISVE2lrJ3x7IcrSdgVrQlMrZMKnLyMg&s"
+                        alt="Bookstore Logo">
                 </div>
                 <ul class="menu">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#books">Books</a></li>
                     <li><a href="#about">About Us</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li><a href="#cart">Cart</a></li>
                 </ul>
                 <div class="hamburger" id="hamburger">
                     <div class="line"></div>
@@ -36,8 +41,8 @@
     </header>
 
     <section id="home" class="hero">
-        <h1>Welcome to Our Online Store</h1>
-        <p>Your are the one who needs the best product.</p>
+        <h1>Welcome to Our Online Bookstore</h1>
+        <p>Your one-stop shop for all your reading needs.</p>
         <button><a href="#books">Shop Now</a></button>
     </section>
 
@@ -45,21 +50,56 @@
         <h2>Featured Books</h2>
         <div class="book-list">
             <div class="book-item">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3zNmNSpi0p8B8afXLc3hZ-DCe_STgV817_A&s" alt="Book Cover">
-                <h3>Leather Boots</h3>
+                <img src="https://i.postimg.cc/8CmBZH5N/shoes.webp" alt="The Great Gatsby">
+                <h3>The Great Gatsby</h3>
                 <p>$10.99</p>
                 <button><a href="#">Buy Now</a></button>
             </div>
             <div class="book-item">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN0v3dgiaCcufr5zvr2inHl4k5RacqKoBZ2w&s" alt="Book Cover">
-                <h3>Black Jackte</h3>
+                <img src="https://i.postimg.cc/76X9ZV8m/Screenshot_from_2022-06-03_18-45-12.png" alt="1984">
+                <h3>1984</h3>
                 <p>$8.99</p>
                 <button><a href="#">Buy Now</a></button>
             </div>
             <div class="book-item">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE8pVoYG6KEzACIbbspppXsXPaUVLGxwSd6g&s" alt="Book Cover">
-                <h3>Rounded sunglasses</h3>
+                <img src="https://i.etsystatic.com/9503960/r/il/e28634/3727468436/il_570xN.3727468436_t443.jpg"
+                    alt="To Kill a Mockingbird">
+                <h3>Rounded glasses</h3>
                 <p>$12.99</p>
+                <button><a href="#">Buy Now</a></button>
+            </div>
+            <div class="book-item">
+                <img src="https://www.julke.pk/cdn/shop/products/Bomber-mens-winter-puffer-jacket-black-quilted-fashion-view-JULKE_800x.jpg?v=1670669941"
+                    alt="Pride and Prejudice">
+                <h3>Black jacket</h3>
+                <p>$9.99</p>
+                <button><a href="#">Buy Now</a></button>
+            </div>
+            <div class="book-item">
+                <img src="https://www.fkick.pk/cdn/shop/files/L1.jpg?v=1707311776" alt="The Catcher in the Rye">
+                <h3>lv shoes</h3>
+                <p>$11.99</p>
+                <button><a href="#">Buy Now</a></button>
+            </div>
+            <div class="book-item">
+                <img src="https://i5.walmartimages.com/seo/Fzm-Women-Shoes-Summer-Lightweight-Mesh-Casual-Travel-Shoes-Sneakers-Non-Slip-Running-Shoes-Black-Us-7_56a5b1e2-71b6-4072-9d03-046585af4414.6c23c61a916de76faf0eb9a9ffe75d2d.jpeg"
+                    alt="The Hobbit">
+                <h3>black shoes</h3>
+                <p>$14.99</p>
+                <button><a href="#">Buy Now</a></button>
+            </div>
+            <div class="book-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxO1dpKK7uQXa5vf_qGumcHAOS-xcNhzmxiQ&s"
+                    alt="Moby Dick">
+                <h3>Mens Underwear</h3>
+                <p>$15.99</p>
+                <button><a href="#">Buy Now</a></button>
+            </div>
+            <div class="book-item">
+                <img src="https://img01.ztat.net/article/spp-media-p1/e89ed840d3e34bb686948c45ad91d44e/2898a80cdbdf4b568c3df28351b3d7b7.jpg?imwidth=762"
+                    alt="War and Peace">
+                <h3>Mens Boxcer</h3>
+                <p>$19.99</p>
                 <button><a href="#">Buy Now</a></button>
             </div>
         </div>
@@ -67,7 +107,57 @@
 
     <section id="about" class="about-us">
         <h2>About Us</h2>
-        <p>We are passionate about books and aim to provide a wide selection of Clothes. Our mission is to make people look good and make them good looking to everyone.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe culpa, fugit libero hic eligendi ipsam nobis
+            facilis omnis soluta quia.
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa officiis id, delectus in quibusdam nobis quia,
+            culpa, magnam perferendis autem repellendus iste saepe! Delectus atque adipisci ut minus vel molestiae.</p>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-list">
+            <div class="testimonial-item">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt id mollitia omnis. Inventore,
+                    aliquam id.</p>
+                <h4>- Sarah J.</h4>
+            </div>
+            <div class="testimonial-item">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic officiis consectetur tempora ab. At,
+                    excepturi voluptate. Molestiae voluptas fugit modi?</p>
+                <h4>- Mark T.</h4>
+            </div>
+            <div class="testimonial-item">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, velit similique quaerat minus
+                    asperiores nostrum voluptatem debitis non at dolorem autem, harum quam et ipsam?</p>
+                <h4>- Emily R.</h4>
+            </div>
+        </div>
+    </section>
+
+    <section id="cart" class="cart">
+        <h2>Your Shopping Cart</h2>
+        <div class="cart-items">
+            <div class="cart-item">
+                <h3>The Great Gatsby</h3>
+                <p>Price: $10.99</p>
+                <button>Remove</button>
+            </div>
+            <div class="cart-item">
+                <h3>1984</h3>
+                <p>Price: $8.99</p>
+                <button>Remove</button>
+            </div>
+            <div class="cart-item">
+                <h3>To Kill a Mockingbird</h3>
+                <p>Price: $12.99</p>
+                <button>Remove</button>
+            </div>
+        </div>
+        <div class="cart-total">
+            <h3>Total: $32.97</h3>
+            <button>Checkout</button>
+        </div>
     </section>
 
     <section id="contact" class="contact">
@@ -76,14 +166,334 @@
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
             <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send US</button>
+            <button type="submit">Send Message</button>
         </form>
     </section>
 
     <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#books">Books</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p>Email: support@onlinebookstore.com</p>
+                <p>Phone: +1 (555) 123-4567</p>
+            </div>
+        </div>
         <p>&copy; 2023 Online Bookstore. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
+
+/css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.top-bar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.auth-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.line {
+    height: 3px;
+    width: 25px;
+    background-color: #333;
+    margin: 3px 0;
+}
+
+.hero {
+    background: url('https://thumbs.dreamstime.com/b/multiethnic-young-people-using-mobile-phones-over-colorful-backgrounds-collage-cheerful-posing-studio-men-women-cellphones-207748353.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+.hero button {
+    background-color: #010101;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.book-collection {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.book-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.book-item {
+    margin: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: transform 0.2s;
+}
+
+.book-item:hover {
+    transform: scale(1.05);
+}
+
+.book-item img {
+    width: 100%;
+    height: auto;
+}
+
+.about-us {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.testimonials {
+    padding: 50px 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.testimonial-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.testimonial-item {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+    background-color: #fff;
+}
+
+.cart {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.cart-items {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cart-item {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact input, .contact textarea {
+    margin: 10px 0;
+    padding: 10px;
+    width: 300px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .book-list {
+        flex-direction: column;
+    }
+
+    .testimonial-list {
+        flex-direction: column;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .cart-items {
+        flex-direction: column;
+    }
+}
+
+.menu.active {
+    display: flex; /* Show the menu when active */
+    flex-direction: column; /* Stack items vertically */
+    position: absolute; /* Position it absolutely */
+    top: 60px; /* Adjust based on your header height */
+    left: 0;
+    background-color: #f8f8f8; /* Background color */
+    width: 100%; /* Full width */
+    z-index: 100; /* Ensure it appears above other content */
+}
+
+
+/java 
+
+// Function to toggle the mobile navigation menu
+document.getElementById("hamburger").addEventListener("click", function() {
+    const menu = document.querySelector(".menu");
+    menu.classList.toggle("active"); // Toggle the 'active' class to show/hide the menu
+});
+
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault(); // Prevent default anchor click behavior
+
+        const target = document.querySelector(this.getAttribute('href')); // Get the target section
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth', // Smooth scroll effect
+                block: 'start' // Align to the start of the section
+            });
+        }
+    });
+});
+
+// Close the mobile menu when a link is clicked
+document.querySelectorAll('.menu a').forEach(link => {
+    link.addEventListener('click', function() {
+        const menu = document.querySelector(".menu");
+        menu.classList.remove("active"); // Remove the 'active' class to hide the menu
+    });
+});

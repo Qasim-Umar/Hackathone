@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="resume">
+        <header>
+            <h1 id="name">Your Name</h1>
+            <p id="contact-info">
+                Email: <a href="mailto:your.email@example.com">your.email@example.com</a> | Phone: +123-456-7890
+            </p>
+        </header>
+
+        <section id="summary">
+            <h2>1. Summary</h2>
+            <p>Dynamic and detail-oriented professional with expertise in [Your Expertise]. Proven ability to deliver high-quality results in fast-paced environments.</p>
+        </section>
+
+        <section id="details">
+            <h2>2. Details</h2>
+            <p><strong>Date of Birth:</strong> January 1, 1990<br>
+               <strong>Address:</strong> 123 Main Street, City, Country<br>
+               <strong>Nationality:</strong> Your Nationality</p>
+        </section>
+
+        <section id="experience">
+            <h2>3. Experience</h2>
+            <div class="job">
+                <h3>Job Title</h3>
+                <p><strong>Company Name</strong> | <em>Start Date - End Date</em></p>
+                <ul>
+                    <li>Key responsibility or achievement</li>
+                    <li>Key responsibility or achievement</li>
+                    <li>Key responsibility or achievement</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>4. Education</h2>
+            <p><strong>Degree:</strong> Bachelor of Science in Computer Science<br>
+            <strong>University:</strong> University Name<br>
+            <strong>Year:</strong> Graduation Year</p>
+        </section>
+
+        <section id="skills">
+            <h2>5. Skills</h2>
+            <p><strong>Technical Skills:</strong> HTML, CSS, JavaScript, TypeScript, Python<br>
+               <strong>Soft Skills:</strong> Teamwork, Communication, Problem-Solving</p>
+        </section>
+
+        <section id="projects">
+            <h2>6. Projects</h2>
+            <div class="project">
+                <h3>Project Name</h3>
+                <p>Description of the project, technologies used, and impact.</p>
+            </div>
+        </section>
+    </div>
+    <script src="script.ts"></script>
+</body>
+</html>
+

@@ -1,0 +1,185 @@
+/my-portfolio
+  /sanity
+    /schemas
+      portfolio.js
+      project.js
+  /lib
+    sanity.js
+  /pages
+    index.js
+  /styles
+    globals.css
+  .gitignore
+  package.json
+  README.md
+3. Code to Paste
+/sanity/schemas/portfolio.js:
+javascript
+Copy
+Edit
+export default {
+  name: 'portfolio',
+  title: 'Portfolio',
+  type: 'document',
+  fields: [
+    {
+      name: 'name',
+      title: 'Name',
+      type: 'string',
+    },
+    {
+      name: 'description',
+      title: 'Description',
+      type: 'text',
+    },
+    {
+      name: 'projects',
+      title: 'Projects',
+      type: 'array',
+      of: [{ type: 'reference', to: [{ type: 'project' }] }],
+    },
+  ],
+};
+/sanity/schemas/project.js:
+javascript
+Copy
+Edit
+export default {
+  name: 'project',
+  title: 'Project',
+  type: 'document',
+  fields: [
+    {
+      name: 'title',
+      title: 'Title',
+      type: 'string',
+    },
+    {
+      name: 'slug',
+      title: 'Slug',
+      type: 'slug',
+      options: {
+        source: 'title',
+        maxLength: 96,
+      },
+    },
+    {
+      name: 'description',
+      title: 'Description',
+      type: 'text',
+    },
+    {
+      name: 'link',
+      title: 'Link',
+      type: 'url',
+    },
+  ],
+};
+/lib/sanity.js:
+javascript
+Copy
+Edit
+import sanityClient from '@sanity/client';
+
+export const client = sanityClient({
+  projectId: 'your_project_id', // Replace with your Sanity project ID
+  dataset: 'production',
+  useCdn: true,
+});
+/pages/index.js:
+javascript
+Copy
+Edit
+import { client } from '../lib/sanity';
+import { PortableText } from '@portabletext/react';
+
+export async function getServerSideProps() {
+  const query = `*[_type == "portfolio"][0]{
+    name,
+    description,
+    "projects": projects[]->{
+      title,
+      description,
+      link
+    }
+  }`;
+
+  const portfolioData = await client.fetch(query);
+
+  return {
+    props: {
+      portfolioData,
+    },
+  };
+}
+
+const Home = ({ portfolioData }) => {
+  return (
+    <div>
+      <h1>{portfolioData.name}</h1>
+      <p>{portfolioData.description}</p>
+
+      <h2>Projects</h2>
+      {portfolioData.projects.map((project) => (
+        <div key={project._id}>
+          <h3>{project.title}</h3>
+          <p>{project.description}</p>
+          <a href={project.link}>View Project</a>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export default Home;
+/styles/globals.css:
+css
+Copy
+Edit
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+h1, h2, h3 {
+  color: #333;
+}
+
+a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+.gitignore:
+text
+Copy
+Edit
+node_modules/
+.next/
+.env
+/.sanity
+README.md (Optional but recommended):
+markdown
+Copy
+Edit
+# My Portfolio
+
+This is a personal portfolio website built using Next.js and Sanity.io. It showcases my projects, skills, and background.
+
+## Setup
+
+1. Clone the repository.
+2. Install dependencies using `npm install`.
+3. Create and configure a Sanity project.
+4. Deploy your project.
+
+### Technologies Used:
+
+- Next.js
+- Sanity.io
+
